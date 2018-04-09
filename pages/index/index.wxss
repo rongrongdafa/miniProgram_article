@@ -1,0 +1,3 @@
+.article-item--clicked view{
+  background-color: #999;
+}

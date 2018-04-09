@@ -1,0 +1,10 @@
+<view wx:for="{{articles}}" wx:for-item="article" wx:key="id">
+  <image src="{{article.cover}}" data-id="{{article.id}}" bindtap="toDetailPage" />
+  <view class="article-item_desc {{article.isReaded ? 'article-item--clicked':''}}">
+    <view data-id="{{article.id}}" bindtap="toDetailPage">{{article.title}}</view>
+    <view>{{article.description}}</view>
+  </view>
+</view>
+<button type="default" plain="{{true}}" loading="{{loadding}}" bindtap="loadMore">
+{{loadMoreText}}
+</button>
