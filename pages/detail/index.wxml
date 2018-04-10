@@ -1,3 +1,4 @@
 <view>{{article.title}}</view>
 <view>{{article.created_at}}</view>
 <view>{{article.content}}</view>
+<button class="article-share-btn" plain="{{true}}" open-type="share"></button>

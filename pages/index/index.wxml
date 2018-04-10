@@ -1,10 +1,12 @@
 <view wx:for="{{articles}}" wx:for-item="article" wx:key="id">
   <image src="{{article.cover}}" data-id="{{article.id}}" bindtap="toDetailPage" />
   <view class="article-item_desc {{article.isReaded ? 'article-item--clicked':''}}">
-    <view data-id="{{article.id}}" bindtap="toDetailPage">{{article.title}}</view>
-    <view>{{article.description}}</view>
+    <view class="title" data-id="{{article.id}}" bindtap="toDetailPage">{{article.title}}</view>
+    <view class="description">{{article.description}}</view>
   </view>
+  <text>\n</text>
 </view>
 <button type="default" plain="{{true}}" loading="{{loadding}}" bindtap="loadMore">
+<!--没有搞清楚button中属性的格式和作用。-->
 {{loadMoreText}}
 </button>

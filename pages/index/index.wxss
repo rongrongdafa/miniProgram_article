@@ -1,3 +1,19 @@
-.article-item--clicked view{
-  background-color: #999;
+view.article-item--clicked view{
+  background-color: #E0E0E0;
+}
+button{
+  width:30%;
+  margin:0 auto;
+  font-size: 30rpx;
+}
+
+view.article-item_desc view.title{
+    font-family: Arial;
+    color:#999;
+    font-size: 40rpx;
+}
+view.article-item_desc view.description{
+    font-family: Arial;
+    color:#999;
+    font-size: 35rpx;
 }
